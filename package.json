@@ -1,5 +1,5 @@
 {
-  "name": "jptr band website",
+  "name": "jptr-band-website",
   "description": "jptr band website, based on gatsby starter",
   "version": "1.0.0",
   "author": "Olivier Baumann <olivier@iovi.io>",
@@ -29,9 +29,11 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
+    "gh-pages": "^1.2.0",
     "prettier": "^1.12.0"
   },
   "repository": {

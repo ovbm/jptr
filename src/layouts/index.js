@@ -11,7 +11,7 @@ const Layout = ({ children, data, ...props }) => (
   <div>
     <Helmet
       bodyAttributes={{
-        id: props.location.pathname === "/" ? "home" : props.location.pathname.split('/').join('')
+        id: props.location.pathname === "/jptr/" ? "home" : props.location.pathname.replace("/jptr/","").slice(0, -1)
       }}
       title={data.site.siteMetadata.title}
       meta={[
