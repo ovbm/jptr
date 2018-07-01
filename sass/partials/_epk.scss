@@ -1,0 +1,202 @@
+#press{
+  @include backgroundImage("../src/images/JPTR-the-absenceof-bg.jpg");
+
+  #pageheader{
+    display:none;
+  }
+  #sllinks{
+    right:0;
+  }
+
+  .contentwrap{
+  	width: 80%;
+  	max-width: 600px;
+  	margin: 0 2em;
+  	text-align: left;
+    position:relative;
+  	z-index:1;
+  	padding: 0 0 7em 0;
+  	}
+
+  .contentwrapout{
+  	width: 100%;
+  	margin: 0 auto;
+  	text-align: left;
+  	z-index:1;
+  	padding: 0 0 1.25em 0;
+  	}
+
+  .pagecontent{
+  	min-height:820px;
+  	}
+
+  #sidenav{
+  	position: fixed;
+  	top: 5em;
+  	right: 1em;
+  	text-transform: uppercase;
+  	font-size: 1.5em;
+  	width: 7.5em;
+  	}
+
+  #sidenav ul{
+  	list-style-type: none;
+  }
+
+  h2{
+    padding-top: 2em;
+  }
+
+  p{
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  .shows p{
+    margin: 0;
+  }
+  .bookinglabelbox{
+    float:left;
+    width: 300px;
+  }
+  .bookinglabel{
+    width:200px;
+  }
+  .jptrtitle{
+  	font-size: 2em;
+  	text-align: center;
+  	margin: 33vh 0 5vh 0;
+  	font-weight: bold;
+  	font-style: italic;
+  }
+
+  .videowrap{
+  	margin: 1em 0;
+  }
+
+  .navborderleft{
+  	display:inline-block;
+  	border-bottom: 0.375em double #fff;
+    }
+
+  .navborderright{
+  	display:inline-block;
+  	border-bottom: 0.375em double #fff;
+  	}
+
+  nav {
+  	z-index: 1000;
+  	text-align: center;
+  	position:relative;
+  	}
+
+  nav ul {
+  	margin: 0;
+  	}
+
+  nav ul li {
+    	display: inline-block;
+    	vertical-align:middle;
+    	padding: 0.5em 1.625em 0.75em 1.625em;
+    	width: 11.625em;
+  	}
+
+  nav ul li a:hover{
+  	color: #000;
+  	}
+}
+  /* 8. Media Queries
+  ----------------------------------------------------------------- */
+@media (max-width: 960px) {
+  #press{
+    nav ul li{
+    	padding: 0.5em 1.225em 0.5em 1.225em;
+    	width: 9em;
+    	}
+
+    nav ul li a{
+    	font-size: 2em;
+    	}
+
+    #sidenav{
+    	background: #000;
+    	position: fixed;
+    	top: 0em;
+    	padding: 0em;
+    	left: 0em;
+    	text-transform: uppercase;
+    	font-size: 1.5em;
+    	z-index: 999;
+    	width: 100%;
+    	}
+
+    #sidenav ul{
+      display: inline-block;
+      padding: 0em;
+      margin:1em;
+
+    }
+
+    #sidenav ul li{
+    	display: inline;
+    	}
+
+    body{
+    	padding-top: 4em;
+    }
+
+
+    #jptrtitle{
+    	font-size: 6em;
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  #press{
+    body {
+    	font-size: 12px;
+    	}
+
+    .navborderright{
+    	border-bottom: 0em double #fff;
+    	border-top: 0.375em double #fff;
+    }
+
+    .onequarter{
+    	width:50%;
+    }
+
+    .onethird{
+    	width:50%;
+    }
+
+    .half{
+    	width: 100%;
+    }
+
+    #footer{
+    	height:12em;
+    }
+
+    nav{
+      margin: 0 0 20px 0;
+    }
+
+    nav ul{
+      padding: 0em;
+    }
+
+    nav ul li{
+    	width: 9.75em;
+    }
+
+    td{
+    	height: 1.5em;
+    }
+
+    #jptrpic{
+    	margin: -22em 0 0 -20em ;
+    }
+  }
+}

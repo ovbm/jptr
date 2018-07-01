@@ -1,0 +1,69 @@
+
+#sllinks{
+	position: fixed;
+	bottom: 0;
+	margin: 0 auto;
+  margin-bottom:0em;
+	min-width: 20em;
+	max-width: 80%;
+	z-index:999;
+	@include breakpoint(bp){
+		left: 3em;
+    height: auto;
+    margin-bottom: -64px;
+    transition:0.4s;
+		max-width:100%;
+		background-color:black;
+		margin-left: -3em;
+		padding-left: 3em;
+		width:100%;
+  }
+}
+
+#slinktoggle{
+	position:fixed;
+  bottom:0;
+  left:0;
+  z-index: 999;
+  display:none;
+      @include breakpoint(bp){
+        display:inline-block;
+      }
+  }
+
+.slcontainer{
+	width:25%;
+	float:left;
+	margin: 1em 0 1em 0;
+	text-align: center;
+	@include breakpoint(bp){
+		width:22%;
+	}
+}
+
+.slink{
+	width:2em;
+	height:2em;
+	display:block;
+	margin: 0 auto;
+}
+
+.slfbook{
+	@include slImage('fbook.png');
+}
+
+.slbandcamp{
+  @include slImage('bandcamp.png');
+}
+
+.slspotify{
+  @include slImage('spotify.png');
+}
+
+.slinstagram{
+  @include slImage('instagram.png');
+}
+
+.slyoutube{
+  @include slImage('youtube.png');
+}

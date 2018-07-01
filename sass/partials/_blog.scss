@@ -1,0 +1,43 @@
+#blog{
+
+  //background:white;
+
+  .container{
+    max-width:60em;
+    width:90vw;
+    margin: 5vh auto;
+  }
+
+  article{
+    height: 30vh;
+    overflow: hidden;
+
+  }
+
+  .blog-teaser {
+    padding:1em 2em;
+    margin: 1em 0 1em 0;
+    opacity: 1;
+    transition: .3s all;
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+
+  .october15-teaser{
+    @include backImage('october15.jpg');
+  }
+
+  .november15-teaser{
+    @include backImage('november15.jpg');
+  }
+
+  .postmeta{
+    opacity:1;
+  }
+
+  .teaser-image{
+    width:100%;
+  }
+
+}
