@@ -138,7 +138,7 @@ class Music extends React.Component {
         <div 
           key={song.songid}
           className="carousel-cell"
-          data-flickity-bg-lazyload={withPrefix(`images/${song.songid}_bg.jpg`)}>
+          data-flickity-bg-lazyload={withPrefix(`/images/${song.songid}_bg.jpg`)}>
           <div id={song.songid} className="fullscreenbg"></div>
           <iframe className="spotifyeb lazyload" data-src={`https://embed.spotify.com/?uri=spotify%${song.spotifyid}`} width="300" height="80" frameBorder="0" allowTransparency="true"></iframe>
           <div className="overlay">
