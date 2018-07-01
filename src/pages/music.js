@@ -11,6 +11,8 @@ class Music extends React.Component {
   componentDidMount() {
     const flkty = new Flickity('.main-carousel', {
       bgLazyLoad: true,
+      adaptiveHeight: true,
+      wrapAround: true,
     });
   }
 
