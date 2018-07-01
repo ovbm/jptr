@@ -5,13 +5,13 @@ import { withPrefix } from 'gatsby-link';
 
 import Header from '../components/header.js';
 
-import '../../sass/main.scss';
+import '../../sass/main.scss'
 
 const Layout = ({ children, data, ...props }) => (
   <div>
     <Helmet
       bodyAttributes={{
-        id: props.location.pathname === "/jptr/" ? "home" : props.location.pathname.replace("/jptr/","").slice(0, -1),
+        id: props.location.pathname === "/" ? "home" : props.location.pathname.split('/').join('')
       }}
       title={data.site.siteMetadata.title}
       meta={[
