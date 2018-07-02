@@ -111,7 +111,7 @@ class Press extends React.Component {
             <h2 id="about">ABOUT</h2>
             <p style={{ textAlign: "left" }}> 
               JPTR (pronounced „jupiter“) is a Zurich based Art Pop duo founded in 2016 by
-              Andrina Bollinger and Ramón Olvieras.
+              Andrina Bollinger and Ramón Oliveras.
               They went on to release a new song every full moon in 2016
               and their debut album "JPTR" in spring of 2017. With the new EP 
               "the absence of ..." they return to the band's essence - 
@@ -131,6 +131,13 @@ class Press extends React.Component {
               &nbsp;and Et Musique Pour Tous (FR) among others.
             </p>
             <p><a href={withPrefix("/jptr_theabsenceof_presskit.zip")}>Presskit_de.zip (10mb)</a></p>
+            <p style={{ fontSize: '0.75em' }}>
+              Music composed by Andrina Bollinger and Ramón Oliveras <br/>
+              Lyrics by Andrina Bollinger and Olivier Baumann <br/>
+              Recorded at Bakermoon Studios Berlin by Yannik Sandhofer <br/>
+              Mixed and Mastered by Martin Ruch (Control Room Berlin), expept Kenophobia II by Yannik Sandhofer<br/>
+              Artwork and Video by Olivier Baumann (IOVI)<br/>
+            </p>
             <h2 id="video">VIDEOS</h2>
               <div>
                 <h3>the absence of ... (EP) 2018 <i>UNRELEASED</i></h3>
