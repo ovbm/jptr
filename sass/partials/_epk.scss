@@ -1,5 +1,4 @@
 #press{
-  @include backgroundImage("../src/images/JPTR-the-absenceof-bg.jpg");
 
   #pageheader{
     display:none;
@@ -41,6 +40,7 @@
 
 #press-pageheader{
   position: absolute;
+  top: 0;
   width: 100%;
   height: 4em;
   margin: 0em 2em 0em 0em;
