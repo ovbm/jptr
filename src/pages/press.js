@@ -117,7 +117,7 @@ class Press extends React.Component {
               "the absence of ..." they return to the band's essence - 
               songs that only feature drums & vocals - reflecting this musical reduction,
               "the absence of ..." deals with transience (principium), fear of
-              emptiness (kenophobia) and the feeling of suspence and stagnation (eye).
+              emptiness (kenophobia) and the feeling of suspense and stagnation (eye).
             </p>
 
             <p> 
@@ -142,10 +142,10 @@ class Press extends React.Component {
               <div>
                 <h3>the absence of ... (EP) 2018 <i>UNRELEASED</i></h3>
                 <div className="videowrap">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/WFdoYD0hY0Y" frameBorder="no" allowFullScreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/2a5OHP1vKOg" frameBorder="no" allowFullScreen></iframe>
                 </div>
                 <div className="videowrap">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/2a5OHP1vKOg" frameBorder="no" allowFullScreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/WFdoYD0hY0Y" frameBorder="no" allowFullScreen></iframe>
                 </div>
                 <h3>JPTR (LP) 2017</h3>
                 <div className="videowrap">
