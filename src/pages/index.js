@@ -12,13 +12,26 @@ class IndexPage extends React.Component {
     return (
       <div>
         <div className="container">
-          <img 
-            src={jptrcd}
-            alt="jptr ep, the absence of ..."
-            style={{ maxWidth: '80%' }}
-          />
+          <div className="videowrap">
+            <iframe
+              title="eyevideo"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/2a5OHP1vKOg"
+              frameBorder="no"
+              allowFullScreen
+            />
+          </div>
           <h1>JPTR, the absence of ...</h1>
-          <h2> EP out 13.07.18</h2>
+          <iframe
+            title="spotifyembedalbumtheabsenceof"
+            src="https://open.spotify.com/embed?uri=spotify:album:5X5jTWx53Fx6tFW4akL0s7"
+            width="300"
+            height="80"
+            frameBorder="0"
+            allowTransparency="true"
+            allow="encrypted-media"
+          />
         </div>
         <div className="bg-img" />
       </div>

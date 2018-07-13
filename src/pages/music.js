@@ -26,6 +26,15 @@ class Music extends React.Component {
   render() {
     const songs = [
       {
+        "title" : "Eye",
+        "songid":"eye",
+        "date": "13.07.18",
+        "manifesto" : "the absence of ...",
+        "spotifyid" : "",
+        "youtubeid": "2a5OHP1vKOg",
+        "backgroundimage": ""
+      },
+      {
         "title" : "Revolution",
         "songid":"revolution",
         "date": "24.01.16",

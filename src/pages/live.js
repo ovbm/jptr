@@ -27,7 +27,7 @@ class Live extends React.Component {
       .then(data => {
       var subdata = data.resultsPage.results.event;
       this.setState({
-        past: subdata
+        past: subdata.reverse()
       });
     });
   }
