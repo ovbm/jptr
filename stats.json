@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-3b0fc40029d66dcc6c5c.js",
-      "component---src-pages-index-js-3b0fc40029d66dcc6c5c.js.map"
+      "component---src-pages-index-js-a868801b860258ccb202.js",
+      "component---src-pages-index-js-a868801b860258ccb202.js.map"
     ],
     "component---src-pages-live-js": [
       "component---src-pages-live-js-2460324f9c3db4b78205.js",
@@ -25,8 +25,8 @@
       "component---src-pages-404-js-3d5ca38329c68f130213.js.map"
     ],
     "commons": [
-      "commons-2eb5d6c7017c9f79549c.js",
-      "commons-2eb5d6c7017c9f79549c.js.map"
+      "commons-3c9f82b72ff38eabaef0.js",
+      "commons-3c9f82b72ff38eabaef0.js.map"
     ],
     "component---src-pages-press-js": [
       "component---src-pages-press-js-ddd6c77f534ea2eb4aae.js",
@@ -41,12 +41,12 @@
       "path---music-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-music-js": [
-      "component---src-pages-music-js-3f024d337877a802256c.js",
-      "component---src-pages-music-js-3f024d337877a802256c.js.map"
+      "component---src-pages-music-js-1b69ab138224ed3e6af1.js",
+      "component---src-pages-music-js-1b69ab138224ed3e6af1.js.map"
     ],
     "app": [
-      "app-a103a246afe2d491df89.js",
-      "app-a103a246afe2d491df89.js.map"
+      "app-a9c13fd50028b7587d98.js",
+      "app-a9c13fd50028b7587d98.js.map"
     ],
     "path---shop": [
       "path---shop-a0e39f21c11f6a62c5ab.js",
