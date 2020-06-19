@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { withPrefix } from 'gatsby-link';
+import { withPrefix } from 'gatsby';
+import { graphql } from "gatsby"
 
 import Header from '../components/header';
 
 import '../../sass/main.scss';
 
-const Layout = ({ children, data, ...props }) => (
+const Layout = ({ children, location }) => (
   <div>
     <Helmet
       bodyAttributes={{
-        id: props.location.pathname === "/" ? "home" : props.location.pathname.split('/').join('')
+        id: location.pathname === "/" ? "home" : location.pathname.split('/').join('')
       }}
-      title={data.site.siteMetadata.title}
+      title="JPTR"
       meta={[
         { name: 'description', content: 'JPTR: the absence of ...' },
         { name: 'keywords', content: 'JPTR, band, the absence of, eye, kenophobia, principium, avant pop, avant-garde, art pop, duo, europa, attack, revolution, master babe, skywalker' },
@@ -49,7 +50,7 @@ const Layout = ({ children, data, ...props }) => (
       ]}
     />
     <Header/>
-    {children()}
+    {children}
   </div>
 );
 
@@ -58,13 +59,3 @@ Layout.propTypes = {
 };
 
 export default Layout;
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

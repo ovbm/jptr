@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Layout from "../components/layout"
 
 class Live extends React.Component {
   constructor(props){
@@ -15,12 +16,10 @@ class Live extends React.Component {
     fetch("https://api.songkick.com/api/3.0/artists/8774179-jptr/calendar.json?apikey=PuBku2LW56sT7SNA")
       .then(response => response.json())
       .then(data => {
-        if (data.resultsPage.results.length>=1) {
-          var subdata = data.resultsPage.results.event;
-          this.setState({
-            upcoming: subdata
-          });
-        } console.log("nodata");
+        var subdata = data.resultsPage.results.event;
+        this.setState({
+          upcoming: subdata
+        });
       });
     fetch("https://api.songkick.com/api/3.0/artists/8774179-jptr/gigography.json?apikey=PuBku2LW56sT7SNA")
       .then(response => response.json())
@@ -42,7 +41,22 @@ class Live extends React.Component {
   }
 
   render(){
-    const past =  this.state.past.map((event)=>{
+    const past = this.state.past.map((event)=>{
+      return(
+       <div key={event.id} className='shows'>
+         <ul>
+           <li>{event.start.date}</li>
+           <li>
+             <a target='_blank' href={event.uri}>
+             {`${event.venue ? event.venue.displayName : ''} ${event.location.city} `}
+             </a>
+           </li>
+         </ul>
+       </div>
+      )
+     })
+
+     const upcoming = this.state.upcoming.map((event)=>{
       return(
        <div key={event.id} className='shows'>
          <ul>
@@ -58,19 +72,21 @@ class Live extends React.Component {
      })
 
     return(
-      <div>
-        <div className="container">
-          <h2>LIVE</h2>
-          <div id="upcoming">
-            TBA
+      <Layout location={this.props.location}>
+        <div>
+          <div className="container">
+            <h2>LIVE</h2>
+            <div id="upcoming">
+              {upcoming}
+            </div>
+            <h2 id="pasttitle" onClick={this.togglePast}>PAST +</h2>
+            <div id="past" className={this.state.showpast ? 'showpast' : ''}>
+            {past}
+            </div>
           </div>
-          <h2 id="pasttitle" onClick={this.togglePast}>PAST +</h2>
-          <div id="past" className={this.state.showpast ? 'showpast' : ''}>
-          {past}
-          </div>
+          <div className="bg-img"></div>
         </div>
-        <div className="bg-img"></div>
-      </div>
+      </Layout>
     )
   }
 }

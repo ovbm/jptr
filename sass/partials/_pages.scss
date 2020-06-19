@@ -149,7 +149,6 @@ body#live{
     }:first-child{
       margin-right:1em;
       margin-bottom:0.5em;
-      width:15%;
       @include breakpoint(bp){
         width:100%;
       }

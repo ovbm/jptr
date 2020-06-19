@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, withPrefix } from 'gatsby-link';
+import { Link } from 'gatsby';
 import Flickity from 'flickity';
+import Layout from "../components/layout"
 
 import 'flickity-bg-lazyload';
 import 'lazysizes';
@@ -166,11 +167,13 @@ class Music extends React.Component {
     });
 
     return (
-      <div className="container">
-        <div className="main-carousel">
-          {content}
+      <Layout location={this.props.location}>
+        <div className="container">
+          <div className="main-carousel">
+            {content}
+          </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }
