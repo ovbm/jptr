@@ -6,15 +6,21 @@
 
 // You can delete this file if you're not using it
 
-exports.onCreateWebpackConfig = ({ config, stage }) => {
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
   if (stage === 'build-html') {
-    config.loader('null', {
-      test: /lazysizes/,
-      loader: 'null-loader',
-    });
-    config.loader('null-flick', {
-      test: /flickity/,
-      loader: 'null-loader',
-    });
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /lazysizes/,
+            use: 'null-loader',
+          },
+          {
+            test: /flickity/,
+            loader: 'null-loader',
+          }
+        ]
+      }
+    })
   }
 };
