@@ -19,21 +19,21 @@ class IndexPage extends React.Component {
                 title="eyevideo"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/2a5OHP1vKOg"
+                src="https://www.youtube.com/embed/r4G6QjRYBv4"
                 frameBorder="no"
                 allowFullScreen
               />
             </div>
-            <h1>JPTR, the absence of ...</h1>
-            <iframe
-              title="spotifyembedalbumtheabsenceof"
-              src="https://open.spotify.com/embed?uri=spotify:album:5X5jTWx53Fx6tFW4akL0s7"
-              width="300"
-              height="80"
-              frameBorder="0"
-              allowTransparency="true"
-              allow="encrypted-media"
-            />
+            <h1>JPTR, Not The Same</h1>
+            <iframe 
+              style={{border: 0, maxWidth: 400, width: '100%', height: 120}}
+              frameBorder="no"
+              src="https://bandcamp.com/EmbeddedPlayer/album=944544190/size=large/bgcol=333333/linkcol=2ebd35/tracklist=false/artwork=small/transparent=true/" 
+              seamless>
+                <a href="https://roninrhythmrecords.bandcamp.com/album/not-the-same">
+                  Not The Same by JPTR
+                </a>
+              </iframe>
           </div>
           <div className="bg-img" />
         </div>

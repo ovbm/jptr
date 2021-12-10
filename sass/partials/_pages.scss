@@ -17,7 +17,7 @@ body:not(#music){
   right: 0;
   bottom: 0;
   left: 0;
-  @include backgroundImage("../src/images/JPTR-the-absenceof-bg.jpg");
+  @include backgroundImage("../src/images/JPTR-not-the-same.jpg");
   }
 
 body#home{
