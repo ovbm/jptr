@@ -1,7 +1,7 @@
 {
   "name": "jptr-band-website",
-  "description": "jptr band website, based on gatsby starter",
-  "version": "1.0.0",
+  "description": "jptr band website",
+  "version": "1.0.1",
   "author": "Olivier Baumann <olivier@iovi.io>",
   "dependencies": {
     "eslint": "^7.3.0",

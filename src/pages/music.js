@@ -92,14 +92,6 @@ class Music extends React.Component {
         "youtubeid": "I1zNbf2Fpzo",
         "backgroundimage": ""
       },{
-        "title" : "Pompadour",
-        "songid":"pompadour",
-        "date": "18.08.16",
-        "manifesto" : "because after us, the deluge.",
-        "spotifyid" : "3Atrack%3A5yJXGDnGnR0DI6k9PTUqLx",
-        "youtubeid": "",
-        "backgroundimage": pompadour,
-      },{
         "title" : "Motherland",
         "songid":"motherland",
         "date": "16.09.16",
@@ -115,14 +107,6 @@ class Music extends React.Component {
         "spotifyid" : "3Atrack%3A1NOzBWl7MfgBd5k3CnaDxU",
         "youtubeid": "",
         "backgroundimage": polyamorhythm,
-      },{
-        "title" : "Transformers",
-        "songid":"transformers",
-        "date": "14.11.16",
-        "manifesto" : "because you are all that meets the eye.",
-        "spotifyid" : "3Aalbum%3A5bltL1hm3dfGINXa7c1Xz5",
-        "youtubeid": "Y18l6ZgFqjE",
-        "backgroundimage": ""
       },{
         "title" : "Boyfriend",
         "songid":"boyfriend",
@@ -146,7 +130,7 @@ class Music extends React.Component {
             frameBorder="0" allowFullScreen>
           </iframe>
           <div className="overlay">
-            <p>{song.date}, {song.title} <br/> <span style={{fontWeight:'bold'}}>{song.manifesto}</span></p>
+            <p>{song.date}, {song.title}</p>
           </div>
         </div>
         )
@@ -159,7 +143,7 @@ class Music extends React.Component {
           <div id={song.songid} className="fullscreenbg"></div>
           <iframe className="spotifyeb lazyload" data-src={`https://embed.spotify.com/?uri=spotify%${song.spotifyid}`} width="300" height="80" frameBorder="0" allowTransparency="true"></iframe>
           <div className="overlay">
-            <p>{song.date}, {song.title} <br/> <span style={{fontWeight:'bold'}}>{song.manifesto}</span></p>
+            <p>{song.date}, {song.title}</p>
           </div>
         </div>
         )
