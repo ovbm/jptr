@@ -51,9 +51,6 @@ const Shop = (props) => (
           <a href="https://jptr.bandcamp.com/album/jptr" style={{ margin: '1em', border: 0, width: '300px', height: '300px' }}>
             <Img fixed={data.vinyl.childImageSharp.fixed} />
           </a>
-          <a href="https://jptr.bandcamp.com/merch/jptr-mens-classic-t-shirt" style={{ margin: '1em', border: 0, width: '300px', height: '300px' }}>
-            <Img fixed={data.tshirt.childImageSharp.fixed}  />
-          </a>
         </div>
       </div>
       <div className="bg-img" />
